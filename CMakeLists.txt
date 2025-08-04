@@ -5,13 +5,14 @@ set(CMAKE_C_STANDARD 11)
 
 if(APPLE)
     enable_language(OBJC)
+    set_source_files_properties(main.c PROPERTIES LANGUAGE OBJC)
 endif()
 
 # PATH TO Sokol
 set(SOKOL_DIR ${CMAKE_SOURCE_DIR}/external/sokol)
 
 add_executable(HelloTriangle
-        main.m
+        main.c
 )
 
 target_include_directories(HelloTriangle PRIVATE ${SOKOL_DIR})
