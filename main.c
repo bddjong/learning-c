@@ -1,8 +1,7 @@
-#import <Cocoa/Cocoa.h>
-#import "sokol_app.h"
-#import "sokol_gfx.h"
-#import "sokol_glue.h"
-#import "shader.h"
+#include "sokol_app.h"
+#include "sokol_gfx.h"
+#include "sokol_glue.h"
+#include "shader.h"
 
 typedef struct {
     float position[3];
